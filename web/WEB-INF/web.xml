@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <servlet>
+        <servlet-name>ShowEtakemons</servlet-name>
+        <servlet-class>project.ShowEtakemons</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowEtakemons</servlet-name>
+        <url-pattern>/showetakemons</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Add</servlet-name>
+        <servlet-class>project.AddEtakemon</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+        <url-pattern>/add-etakemon</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>project.AddUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUser</servlet-name>
+        <url-pattern>/add-user</url-pattern>
+    </servlet-mapping>
+</web-app>
